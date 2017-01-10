@@ -1,0 +1,84 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{A597227F-CD0E-4967-894C-7E27D3E3C43F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business", "Business", "{968E64B8-4EB3-48D7-8FA1-9EF34E0D33C8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{EA5DA035-BCDC-496C-A937-066098FAC7BB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{F18A19CC-3692-4386-8988-FC411B4B473C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bootstrapper", "Bootstrapper", "{233E3414-E370-4469-A2E2-42EAD91C43F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcMusicStore.Infrastructure.Persistence", "MvcMusicStore.Infrastructure.Persistence\MvcMusicStore.Infrastructure.Persistence.csproj", "{B17255BD-80BF-47C9-AAF4-7D515311794E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcMusicStore.Business.Core", "MvcMusicStore.Business.Core\MvcMusicStore.Business.Core.csproj", "{8E4F6890-E876-417B-BA12-F6B7351C9BB9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcMusicStore.Business.Services", "MvcMusicStore.Business.Services\MvcMusicStore.Business.Services.csproj", "{151FE878-6F62-4B21-970D-FB12C7E05077}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcMusicStore.Application.Services", "MvcMusicStore.Application.Services\MvcMusicStore.Application.Services.csproj", "{612AD5D4-BC1E-415B-AF6E-B455CCD9FBED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcMusicStore.Application.Interfaces", "MvcMusicStore.Application.Interfaces\MvcMusicStore.Application.Interfaces.csproj", "{D4B8DE45-890A-480B-9A20-CB015F1B6B0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcMusicStore.Application.ViewModels", "MvcMusicStore.Application.ViewModels\MvcMusicStore.Application.ViewModels.csproj", "{3D074003-FA8B-4AE6-9CFA-696078D61F8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcMusicStore.Presentation.Web", "MvcMusicStore.Presentation.Web\MvcMusicStore.Presentation.Web.csproj", "{284C475B-65BA-4786-949E-6637FAEF0F15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcMusicStore.BootStrapper", "MvcMusicStore.BootStrapper\MvcMusicStore.BootStrapper.csproj", "{C7394210-3084-4CA6-8722-9C41E3BC198C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B17255BD-80BF-47C9-AAF4-7D515311794E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B17255BD-80BF-47C9-AAF4-7D515311794E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B17255BD-80BF-47C9-AAF4-7D515311794E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B17255BD-80BF-47C9-AAF4-7D515311794E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E4F6890-E876-417B-BA12-F6B7351C9BB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E4F6890-E876-417B-BA12-F6B7351C9BB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E4F6890-E876-417B-BA12-F6B7351C9BB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E4F6890-E876-417B-BA12-F6B7351C9BB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{151FE878-6F62-4B21-970D-FB12C7E05077}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{151FE878-6F62-4B21-970D-FB12C7E05077}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{151FE878-6F62-4B21-970D-FB12C7E05077}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{151FE878-6F62-4B21-970D-FB12C7E05077}.Release|Any CPU.Build.0 = Release|Any CPU
+		{612AD5D4-BC1E-415B-AF6E-B455CCD9FBED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{612AD5D4-BC1E-415B-AF6E-B455CCD9FBED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{612AD5D4-BC1E-415B-AF6E-B455CCD9FBED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{612AD5D4-BC1E-415B-AF6E-B455CCD9FBED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4B8DE45-890A-480B-9A20-CB015F1B6B0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4B8DE45-890A-480B-9A20-CB015F1B6B0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4B8DE45-890A-480B-9A20-CB015F1B6B0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4B8DE45-890A-480B-9A20-CB015F1B6B0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D074003-FA8B-4AE6-9CFA-696078D61F8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D074003-FA8B-4AE6-9CFA-696078D61F8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D074003-FA8B-4AE6-9CFA-696078D61F8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D074003-FA8B-4AE6-9CFA-696078D61F8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{284C475B-65BA-4786-949E-6637FAEF0F15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{284C475B-65BA-4786-949E-6637FAEF0F15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{284C475B-65BA-4786-949E-6637FAEF0F15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{284C475B-65BA-4786-949E-6637FAEF0F15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7394210-3084-4CA6-8722-9C41E3BC198C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7394210-3084-4CA6-8722-9C41E3BC198C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7394210-3084-4CA6-8722-9C41E3BC198C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7394210-3084-4CA6-8722-9C41E3BC198C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B17255BD-80BF-47C9-AAF4-7D515311794E} = {EA5DA035-BCDC-496C-A937-066098FAC7BB}
+		{8E4F6890-E876-417B-BA12-F6B7351C9BB9} = {968E64B8-4EB3-48D7-8FA1-9EF34E0D33C8}
+		{151FE878-6F62-4B21-970D-FB12C7E05077} = {968E64B8-4EB3-48D7-8FA1-9EF34E0D33C8}
+		{612AD5D4-BC1E-415B-AF6E-B455CCD9FBED} = {A597227F-CD0E-4967-894C-7E27D3E3C43F}
+		{D4B8DE45-890A-480B-9A20-CB015F1B6B0A} = {A597227F-CD0E-4967-894C-7E27D3E3C43F}
+		{3D074003-FA8B-4AE6-9CFA-696078D61F8B} = {A597227F-CD0E-4967-894C-7E27D3E3C43F}
+		{284C475B-65BA-4786-949E-6637FAEF0F15} = {F18A19CC-3692-4386-8988-FC411B4B473C}
+		{C7394210-3084-4CA6-8722-9C41E3BC198C} = {233E3414-E370-4469-A2E2-42EAD91C43F9}
+	EndGlobalSection
+EndGlobal
