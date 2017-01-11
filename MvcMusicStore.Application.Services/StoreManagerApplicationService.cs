@@ -24,16 +24,20 @@ namespace MvcMusicStore.Application.Services
 
         }
         public void AddAlbum(AlbumViewModel album)
-        {
-            var album = new Album
-            {
-                 
-            }
+        {           
         }
 
         public void AddGenre(GenreViewModel genre)
         {
-            throw new NotImplementedException();
+            var gen = new Genre
+            {
+                Name = genre.Name,
+                Description = genre.Description,
+                CreatedBy = "Madhu"
+            };
+
+            _service.AddGenre(gen);
+    
         }
 
         public void DeleteAlbum(AlbumViewModel album)

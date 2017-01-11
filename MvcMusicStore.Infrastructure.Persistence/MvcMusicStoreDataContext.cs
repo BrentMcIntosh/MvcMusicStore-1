@@ -22,8 +22,7 @@ namespace MvcMusicStore.Infrastructure.Persistence
 
         public void Create<TEntity>(TEntity entity) where TEntity : Entity
         {
-            this.Entry(entity).State = EntityState.Added;
-            this.Set<TEntity>().Attach(entity);
+            this.Set<TEntity>().Add(entity);
         }
 
         public void Delete<TEntity>(TEntity entity) where TEntity : Entity

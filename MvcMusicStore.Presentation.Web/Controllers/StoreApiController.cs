@@ -1,4 +1,4 @@
-﻿using MvcMusicStore.Application.Services;
+﻿using MvcMusicStore.Application.Interfaces;
 using MvcMusicStore.Application.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -12,7 +12,13 @@ namespace MvcMusicStore.Presentation.Web.Controllers
     [RoutePrefix("api/Store")]
     public class StoreApiController : ApiController
     {
-        private StoreApplicationService _storeService = new StoreApplicationService();
+        private IStoreApplicationService _storeService;
+
+        public StoreApiController(IStoreApplicationService storeService)
+        {
+            _storeService = storeService;
+        }
+
         [Route("genre")]
         public IEnumerable<GenreViewModel> Get()
         {

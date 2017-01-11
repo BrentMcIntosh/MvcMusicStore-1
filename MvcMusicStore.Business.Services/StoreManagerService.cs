@@ -9,11 +9,11 @@ using MvcMusicStore.Business.Core.Interfaces.Persistence;
 
 namespace MvcMusicStore.Business.Services
 {
-    public class StoreManagerApplicationService : IStoreManagerService
+    public class StoreManagerService : IStoreManagerService
     {
         IWriteEntities _writeEntities;
 
-        public StoreManagerApplicationService(IWriteEntities writeEntities)
+        public StoreManagerService(IWriteEntities writeEntities)
         {
             _writeEntities = writeEntities;
         }
@@ -25,6 +25,7 @@ namespace MvcMusicStore.Business.Services
         public void AddGenre(Genre genre)
         {
             _writeEntities.Create(genre);
+            _writeEntities.SaveChanges();
         }
 
         public void DeleteAlbum(Album album)

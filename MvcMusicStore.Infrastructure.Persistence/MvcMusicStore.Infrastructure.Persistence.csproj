@@ -49,17 +49,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\201701071407306_BaseMigration.cs" />
-    <Compile Include="Migrations\201701071407306_BaseMigration.Designer.cs">
-      <DependentUpon>201701071407306_BaseMigration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201701071455258_V1Migration.cs" />
-    <Compile Include="Migrations\201701071455258_V1Migration.Designer.cs">
-      <DependentUpon>201701071455258_V1Migration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201701072103347_v2Migration.cs" />
-    <Compile Include="Migrations\201701072103347_v2Migration.Designer.cs">
-      <DependentUpon>201701072103347_v2Migration.cs</DependentUpon>
+    <Compile Include="Migrations\201701111257528_initial.cs" />
+    <Compile Include="Migrations\201701111257528_initial.Designer.cs">
+      <DependentUpon>201701111257528_initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="MvcMusicStoreDataContext.cs" />
@@ -76,14 +68,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201701071407306_BaseMigration.resx">
-      <DependentUpon>201701071407306_BaseMigration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201701071455258_V1Migration.resx">
-      <DependentUpon>201701071455258_V1Migration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201701072103347_v2Migration.resx">
-      <DependentUpon>201701072103347_v2Migration.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201701111257528_initial.resx">
+      <DependentUpon>201701111257528_initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
