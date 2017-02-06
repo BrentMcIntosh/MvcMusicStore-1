@@ -8,6 +8,6 @@ namespace MvcMusicStore.Business.Core.Models
 {
     public class Artist : Entity
     {
-        public int Name { get; set; }
+        public String Name { get; set; }
     }
 }

@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -17,7 +18,7 @@ namespace MvcMusicStore.Infrastructure.Persistence
         }
         public MvcMusicStoreDataContext(string connectionStringOrName): base(connectionStringOrName)
         {
-
+            
         }
 
         public void Create<TEntity>(TEntity entity) where TEntity : Entity
@@ -35,9 +36,14 @@ namespace MvcMusicStore.Infrastructure.Persistence
             return this.Set<TEntity>().AsNoTracking();
         }
 
-        public IQueryable<TEntity> Query<TEntity>() where TEntity:Entity
+        public IQueryable<TEntity> Query<TEntity>(params Expression<Func<TEntity, object>>[] includeExpressions) where TEntity:Entity
         {
-            return this.Set<TEntity>().AsNoTracking();
+            var rootEntity = this.Set<TEntity>().AsNoTracking().AsQueryable();
+            foreach (var includeExpression in includeExpressions)
+            {
+                rootEntity = rootEntity.Include(includeExpression);
+            }
+            return rootEntity;
         }
 
         public void Update<TEntity>(TEntity entity) where TEntity : Entity

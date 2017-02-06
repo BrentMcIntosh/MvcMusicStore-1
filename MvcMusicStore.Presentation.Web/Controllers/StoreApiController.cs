@@ -24,5 +24,12 @@ namespace MvcMusicStore.Presentation.Web.Controllers
         {
             return _storeService.GetAllGenre();
         }
+
+
+        [Route("album/{id}")]
+        public AlbumViewModel GetAlbum(int id)
+        {
+            return _storeService.GetAlbum(id);           
+        }
     }
 }

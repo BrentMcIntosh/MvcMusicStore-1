@@ -5,38 +5,39 @@ using System.Text;
 using System.Threading.Tasks;
 using MvcMusicStore.Business.Core.Interfaces.Services;
 using MvcMusicStore.Business.Core.Models;
+using MvcMusicStore.Business.Core.Interfaces.Persistence;
 
 namespace MvcMusicStore.Business.Services
 {
     public class StoreService : IStoreService
     {
-        IStoreService _service;
+        IWriteEntities writeEntities;
+
+        public StoreService(IWriteEntities readContext)
+        {
+            writeEntities = readContext;
+        }
 
         public StoreService()
         {
-
+          
         }
-
-        public StoreService(IStoreService service)
+        public Album GetAlbum(int albumId)
         {
-            _service = service;
-        }
-        public IEnumerable<Genre> GetAlbum(int albumId)
-        {
-            throw new NotImplementedException();
+            return writeEntities.Query<Album>(x=>x.Artist, x=>x.Genre).Where(x => x.Id == albumId).FirstOrDefault();
         }
 
-        public IEnumerable<Genre> GetAlbums(int genreId)
+        public IEnumerable<Album> GetAlbums(int genreId)
         {
             throw new NotImplementedException();
         }
 
         public IEnumerable<Genre> GetAllGenre()
         {
-            throw new NotImplementedException();
+            return writeEntities.Query<Genre>().ToList();
         }
 
-        public IEnumerable<Genre> GetGenre(int genreId)
+        public Genre GetGenre(int genreId)
         {
             throw new NotImplementedException();
         }

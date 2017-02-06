@@ -1,0 +1,7 @@
+**/obj/
+**/bin/
+**/Debug/
+**/packages/
+**/*.sdf
+**/.vs/
+**/**.user

@@ -10,10 +10,10 @@ namespace MvcMusicStore.Business.Core.Interfaces.Services
     public interface IStoreService
     {
         IEnumerable<Genre> GetAllGenre();
-        IEnumerable<Genre> GetGenre(int genreId);
+        Genre GetGenre(int genreId);
 
-        IEnumerable<Genre> GetAlbums(int genreId);
-        IEnumerable<Genre> GetAlbum(int albumId);
+        IEnumerable<Album> GetAlbums(int genreId);
+        Album GetAlbum(int albumId);
 
     }
 }
