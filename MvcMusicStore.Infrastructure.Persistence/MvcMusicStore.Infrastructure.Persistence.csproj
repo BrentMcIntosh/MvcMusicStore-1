@@ -53,6 +53,10 @@
     <Compile Include="Migrations\201701111257528_initial.Designer.cs">
       <DependentUpon>201701111257528_initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201702032203586_first.cs" />
+    <Compile Include="Migrations\201702032203586_first.Designer.cs">
+      <DependentUpon>201702032203586_first.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="MvcMusicStoreDataContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -70,6 +74,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201701111257528_initial.resx">
       <DependentUpon>201701111257528_initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702032203586_first.resx">
+      <DependentUpon>201702032203586_first.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
